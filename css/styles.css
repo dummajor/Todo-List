@@ -2,7 +2,6 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #f4f4f4;
   margin: 0;
-
   height: 100vh;
 }
 
@@ -76,4 +75,33 @@ ul {
 
 .delete-btn {
   background-color: #e74c3c;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 80%;
+
+    form {
+      flex-direction: column;
+    }
+
+    input[type="text"] {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+
+    button {
+      width: 110%;
+    }
+
+    .list-item {
+      flex-direction: column;
+    }
+
+    .list-item span {
+      width: 100%; /* Ensure span takes full width */
+      margin: 20px 0;
+    }
+  }
 }
